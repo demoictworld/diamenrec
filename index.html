@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamien Records Inc.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <!--favicon-img-->
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- MAIN CONTENT -->
+    <main id="index-one">
+
+
+
+        <!-- CUSTOM CURSOR -->
+        <div class="cursor scale"></div>
+        <div class="cursor-two scale"></div>
+        <!-- CUSTOM CURSOR -->
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="p">
+                <img src="images/headphone.png" alt="headphone"> Use Headphone For Better Experience
+            </div>
+        </div>
+        <!-- PRELOADER -->
+
+
+        <!-- HEADER -->
+        <div id="header">
+
+
+
+            <!-- NAVIGATION -->
+            <div class="navigation">
+                <div class="logo hover ">
+                    <a href="#" class="text">DIAMIEN RECORDS INC.</a>
+                </div>
+                <div class="menu-bar hover ">
+                    <div class="menu-bar-name text">
+                        Menu
+                    </div>
+                    <div class="menu-bar-lines text">
+                        <div class="menu-bar-line"></div>
+                        <div class="menu-bar-line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAVIGATION -->
+
+
+
+
+            <!-- SOCIAL-MEDIA-LINKS -->
+            <div class="social-media-links">
+                <ul>
+                    <li><a href="#" data-text="Youtube" class="text hover">YT</a></li>
+                    <li><a href="#" data-text="Facebook" class="text hover">FB</a></li>
+                    <li><a href="#" data-text="Instagram" class="text hover">IG</a></li>
+                    <li><a href="#" data-text="Instagram" class="text hover">IG</a></li>
+                </ul>
+            </div>
+            <!-- SOCIAL-MEDIA-LINKS -->
+            <!-- gallery img-->
+            <style>
+                .gallery {
+                    position: fixed;
+                    left: 4%;
+                    bottom: 10%;
+                }
+                
+                .gallery img {
+                    height: 40px;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                }
+                
+                .gallery {
+                    z-index: 2;
+                }
+                /* .gal {
+                    color: transparent;
+                    display: inline-block;
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.8s;
+                } */
+                
+                .gal:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 5;
+                    cursor: pointer;
+                }
+                
+                .gal img:hover {
+                    transform: scale(0.9);
+                }
+                /* .gallery img {
+                    height: 24px;
+                    width: 24px;
+                    cursor: pointer;
+                } */
+                
+                @media all and (max-width: 675px) and (min-width: 0px) {
+                    .gallery img {
+                        height: 20px;
+                        cursor: pointer;
+                        transition: transform 0.1s ease;
+                    }
+                }
+            </style>
+            <!-- gallery -->
+            <style>
+                .galBotton {
+                    position: fixed;
+                    left: 4%;
+                    bottom: 10%;
+                    z-index: 2;
+                }
+                
+                .galBotton a {
+                    left: 4%;
+                    bottom: 10%;
+                    cursor: pointer;
+                    display: inline-block;
+                    padding: 13px 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.5);
+                    background: #262c37;
+                    letter-spacing: 2px;
+                    font-size: 18px;
+                    transition: 0.5s;
+                    border-radius: 8px;
+                }
+                
+                .galBotton a:hover {
+                    /* background: gray; */
+                    color: #fff;
+                }
+                
+                .galBotton a span {
+                    display: block;
+                    position: absolute;
+                    /* background: #2894ff; */
+                    background: goldenrod;
+                }
+                
+                .galBotton a span:nth-child(1) {
+                    left: 0;
+                    bottom: 0;
+                    width: 1.5px;
+                    height: 100%;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: transform 0.5s;
+                }
+                
+                .galBotton a:hover span:nth-child(1) {
+                    transform: scaleY(1);
+                    transform-origin: bottom;
+                    transition: transform 0.5s;
+                }
+                
+                .galBotton a span:nth-child(2) {
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1.5px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.5s;
+                }
+                
+                .galBotton a:hover span:nth-child(2) {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                    transition: transform 0.5s;
+                }
+                
+                .galBotton a span:nth-child(3) {
+                    right: 0;
+                    bottom: 0;
+                    width: 1.5px;
+                    height: 100%;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: transform 0.5s;
+                    transition-delay: 0.5s;
+                }
+                
+                .galBotton a:hover span:nth-child(3) {
+                    transform: scaleY(1);
+                    transform-origin: bottom;
+                    transition: transform 0.5s;
+                    transition-delay: 0.5s;
+                }
+                
+                .galBotton a span:nth-child(4) {
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 1.5px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.5s;
+                    transition-delay: 0.5s;
+                }
+                
+                .galBotton a:hover span:nth-child(4) {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                    transition: transform 0.5s;
+                    transition-delay: 0.5s;
+                }
+                
+                @media all and (max-width: 675px) and (min-width: 0px) {
+                    .galBotton a {
+                        padding: 8px 7px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 0.5);
+                        background: #262c37;
+                        letter-spacing: 1px;
+                        font-size: 12px;
+                        transition: 0.5s;
+                        border-radius: 4px;
+                    }
+                }
+            </style>
+
+            <div class="galBotton">
+                <a href="gallerry/gallery.html" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> GALLERY
+                </a>
+
+            </div>
+
+
+            <!-- gallery img-->
+            <!-- <div class="gallery gal">
+                <a href="gallerry/gallery.html" target="_blank">
+                    <img src="images/gal.png" alt="gallery" class="text">
+                </a>
+            </div> -->
+            <!-- gallery-->
+
+
+
+
+            <!-- HEADPHONE IMG -->
+            <div class="headphone img text">
+                <img src="images/headphone.png" class="text" alt="headphone">
+            </div>
+            <!-- HEADPHONE IMG -->
+
+            <!-- NEW RELEASE -->
+            <div class="new-release img text">
+
+                <img src="images/album-thumbnail-one.jpg" alt="new-release">
+                <div class="song-details">
+                    <div class="song-name">Man Dem</div>
+                    <div class="singer-name">D Howell . Ding Dong . Nicky B
+                    </div>
+
+                    <div class="music-player">
+                        <div class="play-song">
+                            <a href="https://open.spotify.com/embed/album/7nW1yToUEz2I2OUdZ9jVso?utm_source=generator">
+                                <img src="images/play.png" alt="play" data-song="darkfire" class="hover">
+                            </a>
+
+                            <!-- <audio src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" data-audio="darkfire"></audio> -->
+                            <!--LINK AND NAME OF AUDIO YOU WANT TO PLAY-->
+                        </div>
+                        <div class="all-songs">
+                            <a href="songs.html" title="All Songs"><i class="gg-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- NEW RELEASE -->
+
+
+        </div>
+        <!-- HEADER -->
+
+        <!-- <div class="gallery-center">
+            <div id="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-img">
+                        <img src="images/album-thumbnail-five.jpg" alt="gallery-img">
+                    </div>
+                    <div class="gallery-text">
+                        <div class="gallery-heading">HOW IT STARTED</div>
+                        <div class="gallery-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptas ea voluptatum itaque? Eaque vitae eveniet sequi alias laborum exercitationem veritatis, nam ut officiis a aliquam tempore atque blanditiis quaerat....</div>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="images/album-thumbnail-five.jpg" alt="gallery-img">
+                    </div>
+                    <div class="gallery-text">
+                        <div class="gallery-heading">HOW IT STARTED</div>
+                        <div class="gallery-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptas ea voluptatum itaque? Eaque vitae eveniet sequi alias laborum exercitationem veritatis, nam ut officiis a aliquam tempore atque blanditiis quaerat....</div>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="images/album-thumbnail-five.jpg" alt="gallery-img">
+                    </div>
+                    <div class="gallery-text">
+                        <div class="gallery-heading">HOW IT STARTED</div>
+                        <div class="gallery-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptas ea voluptatum itaque? Eaque vitae eveniet sequi alias laborum exercitationem veritatis, nam ut officiis a aliquam tempore atque blanditiis quaerat....</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- gallery-->
+
+
+
+        <!-- NAVIGATION CONTENT -->
+
+        <div class="navigation-content">
+            <div class="navigation-logo hover opacity">
+                <a href="#" class="text">DIAMIEN RECORDS INC.</a>
+            </div>
+            <ul class="navigation-ul">
+                <li><a href="index.html" data-text="Home" data-img="images/bg-image-threemenu.jpg">Home</a></li>
+                <li><a href="about.html" data-text="About" data-img="images/about-img.jpg">About</a></li>
+                <li><a href="songs.html" data-text="Songs" data-img="images/album-thumbnail-one.jpg">Songs</a></li>
+                <li><a href="submit-demo.html" data-text="Submit Demo" data-img="images/album-thumbnail-four.jpg">Submit Demo</a></li>
+                <li><a href="artists.html" data-text="Artists" data-img="images/main-bg-three.jpg">Artists</a></li>
+                <li><a href="blog.html" data-text="Blog" data-img="images/main-bg-three.jpg">Blog</a></li>
+                <li><a href="contact.html" data-text="Contact" data-img="images/album-thumbnail-four.jpg">Contact</a></li>
+            </ul>
+            <div class="navigation-close hover about-close opacity">
+                <div class="navigation-close-line"></div>
+                <div class="navigation-close-line"></div>
+            </div>
+
+            <div class="project-preview"></div>
+
+
+            <!-- HEADPHONE IMG -->
+            <div class="headphone-navigation opacity">
+                <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+            </div>
+            <!-- HEADPHONE IMG -->
+
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div class="social-media-links-navigation">
+                <ul>
+                    <li><a href="#" class="text hover opacity">YT</a></li>
+                    <li><a href="#" class="text hover opacity">FB</a></li>
+                    <li><a href="#" class="text hover opacity">IG</a></li>
+                </ul>
+            </div>
+            <!-- SOCIAL MEDIA LINKS -->
+
+        </div>
+
+        <!-- NAVIGATION CONTENT -->
+
+
+
+    </main>
+    <!-- MAIN CONTENT -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>ript src="js/pace.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
